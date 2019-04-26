@@ -15,6 +15,13 @@ group:    files #db
 
 ### git
 
+Standard Anpassungen, damit git "rund" l&auml;ft.
+
+```markdown
+git config --global user.name "Vorname Nachname"
+git config --global user.email "i@t"
+```
+
 
 - Bulleted
 - List
