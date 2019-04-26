@@ -2,6 +2,23 @@
 
 Die Perfekte Cygwin Einrichtung bedarf einiger Tricks.
 
+### Enviroments bereits im Windows setzen
+
+Einige Umgebunsvariablen sollen man in der Windows Umgebung global
+setzen, damit diese nicht immer bei jedem Cygwin Kommando &uuml;ber
+ein Profile geladen werden m&uuml;ssen.
+Also im Windows-cmd:
+```markdown
+setx PATH "C:\Users\hvogler\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Tools"
+```
+Unter Windows kann man dass dann &uuml;ber ...
+Systemsteuerung
+  ->System und Sicherheit
+    ->System
+      ->Einstellungen &auml;ndern
+        ->Erweitert
+          ->Umgebunsvariablen
+
 ### nsswitch.conf anpassen
 
 Damit bei gro&szlig;en Domains auch der Aufruf von cygwin Kommandos
@@ -14,6 +31,11 @@ group:    files #db
 
 
 ### git 
+
+Wenn man in einer Proxy-Umgebung arbeiten mu&szlig; die WinNT Auth
+auf dem Proxy erfordert, so kann man das durch Starten von px.exe
+l&ouml;sen. Damit wird dann unter http://localhost:3128 ein "normaler"
+Proxy verf&uuml;gbar, der mit allen GNU Tools arbeitet.
 
 Damit man nicht immer den User-Namen und das Passwort immerwieder
 eingeben mu&szlig;
