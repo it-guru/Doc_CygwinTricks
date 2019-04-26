@@ -4,17 +4,17 @@ Die Perfekte Cygwin Einrichtung bedarf einiger Tricks.
 
 ### nsswitch.conf anpassen
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Damit bei grossen Domains auch der Aufruf von cygwin Kommandos
+schnell geht, sollte man die passwd und group "cachen".
 
 ```markdown
-Syntax highlighted code block
-
+passwd:   files #db
+group:    files #db
 ```
 
 
-# Header 1
-## Header 2
-### Header 3
+### git
+
 
 - Bulleted
 - List
@@ -24,7 +24,6 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
