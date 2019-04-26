@@ -48,9 +48,22 @@ setx ftp_proxy "http://localhost:3128"
 Damit bei gro&szlig;en Domains auch der Aufruf von cygwin Kommandos
 schnell geht, sollte man die passwd und group "cachen".
 
+/etc/nsswitch.conf
 ```markdown
 passwd:   files #db
 group:    files #db
+```
+
+### definieren wo das HOME liegt
+
+Das Home-Verzeichnis in der Cygwin Umgebung lege ich gerne
+in das Windows-User Home ins Verzeichnis home. Damit das dann
+korrekt ausgewertet wird, muss in die nsswitch.conf die folgende
+Zeile.
+
+/etc/nsswitch.conf
+```markdown
+db_home:  /cygdrive/c/Users/%U/home
 ```
 
 
