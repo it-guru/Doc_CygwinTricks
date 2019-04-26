@@ -21,13 +21,12 @@ Systemsteuerung
           ->Umgebunsvariablen
 ```
 
-### Windows Auth Proxy Problem
+### Windows Auth Proxy Problem - px.exe
 
 Auf Enterprise Windows Umgebungen wird gerne WindowsAuth f&uuml;r den
 Proxy Zugriff eingesetzt.
 Wenn man in einer solchen WinAuth Proxy-Umgebung arbeiten mu&szlig;, 
-so kann man das durch Starten von 
-[px.exe](https://github.com/genotrance/px)
+so kann man das durch Starten von **[px.exe](https://github.com/genotrance/px)**
 l&ouml;sen. Damit wird dann unter http://localhost:3128 ein "normaler"
 Proxy verf&uuml;gbar, der mit allen GNU Tools arbeitet.
 Das px.exe kann einfach in der Autostart Gruppe aufgerufen werden.
