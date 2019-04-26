@@ -12,13 +12,35 @@ Also im Windows-cmd:
 setx PATH "C:\Users\hvogler\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Tools"
 ```
 Unter Windows kann man dass dann &uuml;ber ...
-Systemsteuerung
 ```markdown
+Systemsteuerung
   ->System und Sicherheit
     ->System
       ->Einstellungen &auml;ndern
         ->Erweitert
           ->Umgebunsvariablen
+```
+
+### Windows Auth Proxy Problem
+
+Auf Enterprise Windows Umgebungen wird gerne WindowsAuth f&uuml;r den
+Proxy Zugriff eingesetzt.
+Wenn man in einer solchen WinAuth Proxy-Umgebung arbeiten mu&szlig;, 
+so kann man das durch Starten von 
+[px.exe](https://github.com/genotrance/px)
+l&ouml;sen. Damit wird dann unter http://localhost:3128 ein "normaler"
+Proxy verf&uuml;gbar, der mit allen GNU Tools arbeitet.
+Das px.exe kann einfach in der Autostart Gruppe aufgerufen werden.
+Damit dann idealerweise alle Gnu-Tools global immer auf den Proxy
+zugreifen k&ouml;nnen, kann das einfach in der Windows-Env hinterlegen:
+
+```markdown
+setx HTTP_PROXY "http://localhost:3128"
+setx http_proxy "http://localhost:3128"
+setx HTTPS_PROXY "http://localhost:3128"
+setx https_proxy "http://localhost:3128"
+setx FTP_PROXY "http://localhost:3128"
+setx ftp_proxy "http://localhost:3128"
 ```
 
 ### nsswitch.conf anpassen
@@ -34,10 +56,6 @@ group:    files #db
 
 ### git 
 
-Wenn man in einer Proxy-Umgebung arbeiten mu&szlig; die WinNT Auth
-auf dem Proxy erfordert, so kann man das durch Starten von px.exe
-l&ouml;sen. Damit wird dann unter http://localhost:3128 ein "normaler"
-Proxy verf&uuml;gbar, der mit allen GNU Tools arbeitet.
 
 Damit man nicht immer den User-Namen und das Passwort immerwieder
 eingeben mu&szlig;
@@ -55,15 +73,6 @@ git config --global user.email "i@t"
 
 
 <hr>
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
