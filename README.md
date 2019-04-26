@@ -13,11 +13,13 @@ setx PATH "C:\Users\hvogler\AppData\Local\Microsoft\WindowsApps;C:\Program Files
 ```
 Unter Windows kann man dass dann &uuml;ber ...
 Systemsteuerung
+```markdown
   ->System und Sicherheit
     ->System
       ->Einstellungen &auml;ndern
         ->Erweitert
           ->Umgebunsvariablen
+```
 
 ### nsswitch.conf anpassen
 
