@@ -81,8 +81,11 @@ db_home:  /cygdrive/c/Users/%U/home
 Damit man nicht immer den User-Namen und das Passwort immerwieder
 eingeben mu&szlig;
 ```markdown
-git config --global credential.helper cache
+#git config --global credential.helper cache
+git config --global credential.helper 'store --file ~/.my-credentials'
 ```
+Cache alleine ist nicht gut (da mu&szlig; man nach 15min das Passwort
+erneut eingeben).
 
 Standard Anpassungen, damit git "rund" l&auml;uft.
 ```markdown
