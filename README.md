@@ -16,7 +16,7 @@ Unter Windows kann man dass dann &uuml;ber ...
 Systemsteuerung
   ->System und Sicherheit
     ->System
-      ->Einstellungen &auml;ndern
+      ->Einstellungen aendern
         ->Erweitert
           ->Umgebunsvariablen
 ```
@@ -61,6 +61,14 @@ schnell geht, sollte man die passwd und group "cachen".
 passwd:   files #db
 group:    files #db
 ```
+### Cygwin XWin automatisch starten
+
+Installieren muss man xinit xorg-server und xterm . Dann kann man ein
+Icon mit ...
+```markdown
+C:\root\bin\run.exe --quote /usr/bin/bash.exe -l -c "cd; /usr/bin/startxwin"
+```
+... in die AutoStart einbauen.
 
 ### definieren wo das HOME liegt
 
