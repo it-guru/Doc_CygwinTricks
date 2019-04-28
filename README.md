@@ -21,6 +21,15 @@ Systemsteuerung
           ->Umgebunsvariablen
 ```
 
+### Cygwin-Setup Icon erstellen
+
+Damit man ohne gro&szlig; Aufwand Packete hinzuf&uuml;gen bzw. aktualisieren
+kann, sollte man sich ein Setup-Icon erzeugen:
+```markdown
+"C:\Program Files\cygwin\setup-x86_64.exe" --root "C:\root" --no-admin -n -N  -l "C:\Program Files\cygwin"
+```
+
+
 ### Windows Auth Proxy Problem - px.exe
 
 Auf Enterprise Windows Umgebungen wird gerne WindowsAuth f&uuml;r den
