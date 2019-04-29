@@ -8,11 +8,11 @@ Einige Umgebunsvariablen sollen man in der Windows Umgebung global
 setzen, damit diese nicht immer bei jedem Cygwin Kommando &uuml;ber
 ein Profile geladen werden m&uuml;ssen.
 Also im Windows-cmd:
-```markdown
+```
 setx PATH "C:\Users\hvogler\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Tools"
 ```
 Unter Windows kann man dass dann &uuml;ber ...
-```markdown
+```
 Systemsteuerung
   ->System und Sicherheit
     ->System
@@ -25,7 +25,7 @@ Systemsteuerung
 
 Damit man ohne gro&szlig; Aufwand Packete hinzuf&uuml;gen bzw. aktualisieren
 kann, sollte man sich ein Setup-Icon erzeugen:
-```markdown
+```
 "C:\Program Files\cygwin\setup-x86_64.exe" --root "C:\root" --no-admin -n -N  -l "C:\Program Files\cygwin"
 ```
 
