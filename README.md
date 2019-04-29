@@ -108,3 +108,5 @@ git config --global user.email "i@t"
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+<hr>
+This site was built using [GitHub Pages](https://pages.github.com/).
