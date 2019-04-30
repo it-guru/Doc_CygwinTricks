@@ -42,7 +42,7 @@ Das px.exe kann einfach in der Autostart Gruppe aufgerufen werden.
 Damit dann idealerweise alle Gnu-Tools global immer auf den Proxy
 zugreifen k&ouml;nnen, kann das einfach in der Windows-Env hinterlegen:
 
-```markdown
+```
 setx HTTP_PROXY "http://localhost:3128"
 setx http_proxy "http://localhost:3128"
 setx HTTPS_PROXY "http://localhost:3128"
@@ -57,7 +57,7 @@ Damit bei gro&szlig;en Domains auch der Aufruf von cygwin Kommandos
 schnell geht, sollte man die passwd und group "cachen".
 
 /etc/nsswitch.conf
-```markdown
+```
 passwd:   files #db
 group:    files #db
 ```
@@ -65,7 +65,7 @@ group:    files #db
 
 Installieren muss man xinit xorg-server und xterm . Dann kann man ein
 Icon mit ...
-```markdown
+```
 C:\root\bin\run.exe --quote /usr/bin/bash.exe -l -c "cd; /usr/bin/startxwin"
 ```
 ... in die AutoStart einbauen.
